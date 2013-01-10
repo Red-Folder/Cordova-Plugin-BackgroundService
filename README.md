@@ -31,6 +31,12 @@ The below is a tutorial to create your own Twitter service:
 
 Please let me know your thoughts and comments.
 
+## Source Code ##
+
+This repository uses jar files for the main logic.  Due to the complexity of the code, I've found this is the easiest method to distribute it.
+
+Should you be interested in the underlying source, it is available in this repository -> https://github.com/Red-Folder/Cordova-Plugin-BackgroundService-Source
+
 ## Licence ##
 
 The MIT License
