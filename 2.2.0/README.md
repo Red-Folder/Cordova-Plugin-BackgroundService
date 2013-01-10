@@ -4,14 +4,40 @@ A plugin (and framework code) that allows the development and operation of an An
 
 The example MyService Background Service will write a Hello message to the LogCat every minute.  The MyService is designed as sample code.
 
-## Cordova Versions ##
+## Adding the plugin to your project ##
 
-Folders used for different Cordova versions:
+Copy the files to the following locations:
 
-* /1.8.1 - For use with Cordova 1.8.1
-* /2.0.0 - For use with Cordova 2.0.0
-* /2.2.0 - For use with Cordova 2.2.0
+* libs\backgroundserviceplugin-2.2.0.jar
+* src\com\yournamespace\yourappname\MyService.java
+* assets\www\backgroundService-2.2.0.js
+* assets\www\myService-2.2.0.js
+* assets\www\index-2.2.0.html
 
+Add the following to res\xml\config.xml
+
+```
+<plugin name="BackgroundServicePlugin" value="com.red_folder.phonegap.plugin.backgroundservice.BackgroundServicePlugin"/>
+```
+
+Add the following to AndroidManifest.xml
+
+```
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+<!-- To be added within Application nde -->
+<service android:name="com.yournamespace.yourappname.MyService">
+	<intent-filter>         
+		<action android:name="com.yournamespace.yourappname.MyService"/> 
+	</intent-filter>     
+</service>
+
+<receiver android:name="com.red_folder.phonegap.plugin.backgroundservice.BootReceiver">
+	<intent-filter>     
+		<action android:name="android.intent.action.BOOT_COMPLETED"></action>   
+	</intent-filter> 
+</receiver>
+```
 ## Change Log ##
 
 * 14th November 2012 - Fix for service not stopping if the app has been closed then re-opened
@@ -42,4 +68,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
