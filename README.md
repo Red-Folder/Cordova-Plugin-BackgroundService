@@ -14,8 +14,11 @@ Folders used for different Cordova versions:
 * /2.3.0 - For use with Cordova 2.3.0
 * /2.4.0 - For use with Cordova 2.4.0
 * /2.5.0 - For use with Cordova 2.5.0
+<<<<<<< HEAD
 * /2.6.0 - For use with Cordova 2.6.0
 * /2.7.0 - For use with Cordova 2.7.0
+=======
+>>>>>>> 70202be2cb41179a4301c6225d9c4a8c28b084a2
 
 ## Change Log ##
 
