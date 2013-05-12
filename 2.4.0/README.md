@@ -8,11 +8,11 @@ The example MyService Background Service will write a Hello message to the LogCa
 
 Copy the files to the following locations:
 
-* libs\backgroundserviceplugin-2.2.0.jar
+* libs\backgroundserviceplugin-2.4.0.jar
 * src\com\yournamespace\yourappname\MyService.java
-* assets\www\backgroundService-2.2.0.js
-* assets\www\myService-2.2.0.js
-* assets\www\index-2.2.0.html
+* assets\www\backgroundService-2.4.0.js
+* assets\www\myService-2.4.0.js
+* assets\www\index-2.4.0.html
 
 Add the following to res\xml\config.xml
 

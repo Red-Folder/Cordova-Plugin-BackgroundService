@@ -11,9 +11,15 @@ Folders used for different Cordova versions:
 * /1.8.1 - For use with Cordova 1.8.1
 * /2.0.0 - For use with Cordova 2.0.0
 * /2.2.0 - For use with Cordova 2.2.0
+* /2.3.0 - For use with Cordova 2.3.0
+* /2.4.0 - For use with Cordova 2.4.0
+* /2.5.0 - For use with Cordova 2.5.0
+* /2.6.0 - For use with Cordova 2.6.0
+* /2.7.0 - For use with Cordova 2.7.0
 
 ## Change Log ##
 
+* 12th May 2013 - Updated to handle service being restarted by OS (version 2.2+)
 * 14th November 2012 - Fix for service not stopping if the app has been closed then re-opened
 
 ## Further Information ##
@@ -41,7 +47,7 @@ Should you be interested in the underlying source, it is available in this repos
 
 The MIT License
 
-Copyright (c) 2012 Red Folder Consultancy Ltd
+Copyright (c) 2013 Red Folder Consultancy Ltd
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

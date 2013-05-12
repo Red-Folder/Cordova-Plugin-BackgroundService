@@ -8,11 +8,11 @@ The example MyService Background Service will write a Hello message to the LogCa
 
 Copy the files to the following locations:
 
-* libs\backgroundserviceplugin-2.2.0.jar
+* libs\backgroundserviceplugin-2.6.0.jar
 * src\com\yournamespace\yourappname\MyService.java
-* assets\www\backgroundService-2.2.0.js
-* assets\www\myService-2.2.0.js
-* assets\www\index-2.2.0.html
+* assets\www\backgroundService-2.6.0.js
+* assets\www\myService-2.6.0.js
+* assets\www\index-2.6.0.html
 
 Add the following to res\xml\config.xml
 
@@ -62,7 +62,7 @@ Please let me know your thoughts and comments.
 
 The MIT License
 
-Copyright (c) 2012 Red Folder Consultancy Ltd
+Copyright (c) 2013 Red Folder Consultancy Ltd
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
