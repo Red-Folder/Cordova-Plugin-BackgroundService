@@ -107,7 +107,7 @@ function CreateBackgroundService(serviceName, require, exports, module) {
 	/**
 	  * Sets the configuration for the service
 	  *
-	  * @param configuration JSONObject to be sent to the service
+	  * @oaran configuration JSONObject to be sent to the service
 	  * @param successCallback The callback which will be called if the method is successful
 	  * @param failureCallback The callback which will be called if the method encounters an error
 	  */
