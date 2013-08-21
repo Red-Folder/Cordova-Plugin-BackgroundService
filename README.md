@@ -8,14 +8,21 @@ The example MyService Background Service will write a Hello message to the LogCa
 
 Folders used for different Cordova versions:
 
-* /1.8.1 - For use with Cordova 1.8.1
-* /2.0.0 - For use with Cordova 2.0.0
 * /2.2.0 - For use with Cordova 2.2.0
 * /2.3.0 - For use with Cordova 2.3.0
 * /2.4.0 - For use with Cordova 2.4.0
 * /2.5.0 - For use with Cordova 2.5.0
 * /2.6.0 - For use with Cordova 2.6.0
 * /2.7.0 - For use with Cordova 2.7.0
+* /2.8.0 - For use with Cordova 2.8.0
+
+## Depreciated Versions ##
+
+Over time I will no longer maintain older versions.  These will be listed here.  The code will still be available in the source, but may not compile or build without work.
+
+* /1.8.1 - For use with Cordova 1.8.1 - Depreciated 21st August 2013
+* /2.0.0 - For use with Cordova 2.0.0 - Depreciated 21st August 2013
+
 
 ## Change Log ##
 

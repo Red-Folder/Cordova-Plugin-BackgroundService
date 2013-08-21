@@ -1,3 +1,11 @@
+# Depreciated Version - 21st August 2013 #
+
+Over time I will no longer maintain older versions.  The code will still be available in the source, but may not compile or build without work.
+
+
+
+
+
 # Background Service Plugin for Phonegap #
 
 A plugin (and framework code) that allows the development and operation of an Android Background Service.

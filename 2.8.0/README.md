@@ -1,11 +1,3 @@
-# Depreciated Version - 21st August 2013 #
-
-Over time I will no longer maintain older versions.  The code will still be available in the source, but may not compile or build without work.
-
-
-
-
-
 # Background Service Plugin for Phonegap #
 
 A plugin (and framework code) that allows the development and operation of an Android Background Service.
@@ -16,13 +8,13 @@ The example MyService Background Service will write a Hello message to the LogCa
 
 Copy the files to the following locations:
 
-* libs\backgroundserviceplugin.jar
+* libs\backgroundserviceplugin-2.8.0.jar
 * src\com\yournamespace\yourappname\MyService.java
-* assets\www\backgroundService.js
-* assets\www\myService.js
-* assets\www\index.html
+* assets\www\backgroundService-2.8.0.js
+* assets\www\myService-2.8.0.js
+* assets\www\index-2.8.0.html
 
-Add the following to res\xml\plugins.xml
+Add the following to res\xml\config.xml
 
 ```
 <plugin name="BackgroundServicePlugin" value="com.red_folder.phonegap.plugin.backgroundservice.BackgroundServicePlugin"/>
@@ -48,8 +40,8 @@ Add the following to AndroidManifest.xml
 ```
 ## Change Log ##
 
+* 12th May 2013 - Updated to handle service being restarted by OS
 * 14th November 2012 - Fix for service not stopping if the app has been closed then re-opened
-
 
 ## Further Information ##
 
@@ -70,7 +62,7 @@ Please let me know your thoughts and comments.
 
 The MIT License
 
-Copyright (c) 2012 Red Folder Consultancy Ltd
+Copyright (c) 2013 Red Folder Consultancy Ltd
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
