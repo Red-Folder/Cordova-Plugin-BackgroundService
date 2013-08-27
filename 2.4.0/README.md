@@ -40,10 +40,8 @@ Add the following to AndroidManifest.xml
 ```
 ## Change Log ##
 
-<<<<<<< HEAD
+* 27th August 2013 - Added TimerMilliseconds to returned JSONObject (see Issue 5)
 * 12th May 2013 - Updated to handle service being restarted by OS
-=======
->>>>>>> 70202be2cb41179a4301c6225d9c4a8c28b084a2
 * 14th November 2012 - Fix for service not stopping if the app has been closed then re-opened
 
 ## Further Information ##

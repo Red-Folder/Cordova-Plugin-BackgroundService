@@ -45,6 +45,7 @@ function CreateBackgroundService(serviceName, require, exports, module) {
 	  *		Boolean RegisteredForBootStart - True if the Service is registered for boot start
 	  *		JSONObject Configuration - A JSONObject of the configuration of the service (contents dependant on the service)
 	  *		JSONObject LastestResult - A JSONObject of the last result of the service (contents dependant on the service)
+	  *		int TimerMilliseconds - Milliseconds used by the background service if Timer enabled
 	  */
 
 	/**
