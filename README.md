@@ -29,6 +29,7 @@ Over time I will no longer maintain older versions.  These will be listed here. 
 
 ## Change Log ##
 
+* 27th August 2013 - Added TimerMilliseconds to returned JSONObject (see Issue 5)
 * 12th May 2013 - Updated to handle service being restarted by OS (version 2.2+)
 * 14th November 2012 - Fix for service not stopping if the app has been closed then re-opened
 
