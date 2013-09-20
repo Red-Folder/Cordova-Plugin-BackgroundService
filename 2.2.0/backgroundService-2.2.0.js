@@ -177,6 +177,20 @@ function CreateBackgroundService(serviceName, require, exports, module) {
 						[this.getServiceName()]);
 	};
 
+	/**
+	  * Returns the doWork once
+	  *
+	  * @param successCallback The callback which will be called if the method is successful
+	  * @param failureCallback The callback which will be called if the method encounters an error
+	  */
+	BackgroundService.prototype.runOnce = function(successCallback, failureCallback) { 
+		return exec(	successCallback,      
+						failureCallback,      
+						'BackgroundServicePlugin',      
+						'runOnce',      
+						[this.getServiceName()]);
+	};
+
 	var backgroundService = new BackgroundService(serviceName);
 	module.exports = backgroundService;
 }; 
