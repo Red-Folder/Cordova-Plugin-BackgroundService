@@ -18,6 +18,7 @@ Folders used for different Cordova versions:
 * /2.8.1 - For use with Cordova 2.8.1
 * /2.9.0 - For use with Cordova 2.9.0
 * /3.0.0 - For use with Cordova 3.0.0
+* /3.1.0 - For use with Cordova 3.1.0
 
 ## Depreciated Versions ##
 
