@@ -60,6 +60,16 @@ The below is a tutorial to create your own Twitter service:
 
 Please let me know your thoughts and comments.
 
+## Spread the love ##
+
+If you find the Background Service Plugin useful then spread the love.
+
+All the work I do on the Plugin is done in my spare time - time I would otherwise be spending taking my wife out for a nice meal or helping my lad find vinyl records (he's currently very much into The Smiths, Fleetwood Mac and Kate Bush).
+
+The Plugin is free and will always remain free.  I will continue to develop, maintain and distribute the Plugin under the MIT License.
+
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E64TCFQ3NLHZ8
+
 ## Licence ##
 
 The MIT License
