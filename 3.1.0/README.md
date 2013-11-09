@@ -42,6 +42,8 @@ Add the following to AndroidManifest.xml
 ```
 ## Change Log ##
 
+* 9th November 2013 - Added ability to listen for doWork() updates using registerForUpdates/ deregisterForUpdates.  See individual version README for support info (rolling out version by version.  For more info see https://github.com/Red-Folder/Cordova-Plugin-BackgroundService/issues/17
+* 20th September 2013 - Added runOnce support (see https://github.com/Red-Folder/Cordova-Plugin-BackgroundService/issues/14)
 * 4th September 2013 - Fixes for NullPointerException (see https://github.com/Red-Folder/Cordova-Plugin-BackgroundService/issues/7)
 * 27th August 2013 - Added TimerMilliseconds to returned JSONObject (see Issue 5)
 * 12th May 2013 - Updated to handle service being restarted by OS
