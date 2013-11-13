@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 Red Folder Consultancy Ltd
+ * Copyright 2013 Red Folder Consultancy Ltd
  *   
  * Licensed under the Apache License, Version 2.0 (the "License");   
  * you may not use this file except in compliance with the License.   
@@ -46,6 +46,7 @@ function CreateBackgroundService(serviceName, require, exports, module) {
 	  *		JSONObject Configuration - A JSONObject of the configuration of the service (contents dependant on the service)
 	  *		JSONObject LastestResult - A JSONObject of the last result of the service (contents dependant on the service)
 	  *		int TimerMilliseconds - Milliseconds used by the background service if Timer enabled
+	  *		Boolean RegisteredForUpdates - True if the Service is registered to send updates to the front-end
 	  */
 
 	/**
@@ -188,6 +189,34 @@ function CreateBackgroundService(serviceName, require, exports, module) {
 						failureCallback,      
 						'BackgroundServicePlugin',      
 						'runOnce',      
+						[this.getServiceName()]);
+	};
+
+	/**
+	  * Registers for doWork() updates
+	  *
+	  * @param successCallback The callback which will be called if the method is successful
+	  * @param failureCallback The callback which will be called if the method encounters an error
+	  */
+	BackgroundService.prototype.registerForUpdates = function(successCallback, failureCallback) { 
+		return exec(	successCallback,      
+						failureCallback,      
+						'BackgroundServicePlugin',      
+						'registerForUpdates',      
+						[this.getServiceName()]);
+	};
+
+	/**
+	  * Deregisters for doWork() updates
+	  *
+	  * @param successCallback The callback which will be called if the method is successful
+	  * @param failureCallback The callback which will be called if the method encounters an error
+	  */
+	BackgroundService.prototype.deregisterForUpdates = function(successCallback, failureCallback) { 
+		return exec(	successCallback,      
+						failureCallback,      
+						'BackgroundServicePlugin',      
+						'deregisterForUpdates',      
 						[this.getServiceName()]);
 	};
 

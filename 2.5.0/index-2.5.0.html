@@ -80,6 +80,16 @@
 													function(e){handleError(e)});
  			}
 
+ 			function registerForUpdates() {
+				myService.registerForUpdates(	function(r){handleSuccess(r)},
+												function(e){handleError(e)});
+ 			}
+
+ 			function deregisterForUpdates() {
+				myService.deregisterForUpdates(	function(r){handleSuccess(r)},
+												function(e){handleError(e)});
+ 			}
+
  			function setConfig() {
 				var helloToTxt = document.getElementById("helloToTxt");
  				var helloToString = helloToTxt.value;
@@ -98,13 +108,15 @@
 				var serviceBtn = document.getElementById("toggleService");
 				var timerBtn = document.getElementById("toggleTimer");
 				var bootBtn = document.getElementById("toggleBoot");
+				var listenBtn = document.getElementById("toggleListen");
 				var updateBtn = document.getElementById("updateBtn");
 				var refreshBtn = document.getElementById("refreshBtn");
 
 				var serviceStatus = document.getElementById("serviceStatus");
 				var timerStatus = document.getElementById("timerStatus");
 				var bootStatus = document.getElementById("bootStatus");
-
+				var listenStatus = document.getElementById("listenStatus");
+				
 				serviceBtn.disabled = false;
 				if (data.ServiceRunning) {
 					serviceStatus.innerHTML = "Running";
@@ -141,6 +153,15 @@
 				} else {
 					bootStatus.innerHTML = "Not registered";
 					bootBtn.onclick = registerForBootStart;
+				}
+				
+				listenBtn.disabled = false;
+				if (data.RegisteredForUpdates) {
+					listenStatus.innerHTML = "Registered";
+					listenBtn.onclick = deregisterForUpdates;
+				} else {
+					listenStatus.innerHTML = "Not registered";
+					listenBtn.onclick = registerForUpdates;
 				}
 
 				if (data.Configuration != null)
@@ -184,6 +205,11 @@
 				<th>Boot</th>
 				<td><div id="bootStatus"></div></td>
 				<td><input disabled id="toggleBoot" type="button" value="toggle"/></td>
+			</tr>
+			<tr>
+				<th>Listen</th>
+				<td><div id="listenStatus"></div></td>
+				<td><input disabled id="toggleListen" type="button" value="toggle"/></td>
 			</tr>
 			
 			<tr>
